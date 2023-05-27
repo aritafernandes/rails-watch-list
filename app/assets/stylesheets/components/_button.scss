@@ -1,8 +1,3 @@
-.btn {
-  position: absolute;
-  right: 150px;
-}
-
 .btn-ghost {
   color: #4A4A4A;
   border: 1px solid #4A4A4A;
@@ -11,6 +6,11 @@
   font-weight: lighter;
   opacity: 0.6;
   transition: opacity 0.3s ease;
+}
+
+.btn-right {
+position: absolute;
+right: 150px;
 }
 
 .btn-ghost:hover {
