@@ -1,9 +1,17 @@
-<h1>Save any kind of movies</h1>
-<h2>Classic</h2>
-<h3>My lists</h3>
-<%= link_to "Create a movie list", new_list_path, class: 'btn btn-primary' %>
-<% @lists.each do |list| %>
-  <%= link_to list_path(list) do %>
-    <p><%= list.name %></p>
-  <% end %>
-<% end %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://newinoeiras.nit.pt/wp-content/uploads/2023/02/dc4adbb6887d4a4b40da0617458b180a-754x394.jpg);">
+  <div class="container">
+    <h1>Create a movie list <strong></h1>
+    <p>Classic</p>
+  </div>
+ </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p>My Lists</p>
+      <%= render "shared/cards_list", lists: @lists %>
+      <br>
+      <%= link_to "Create a movie list", new_list_path, class: "btn btn-ghost" %>
+    </div>
+  </div>
+</div>
