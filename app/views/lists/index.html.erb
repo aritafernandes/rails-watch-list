@@ -1,6 +1,9 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://newinoeiras.nit.pt/wp-content/uploads/2023/02/dc4adbb6887d4a4b40da0617458b180a-754x394.jpg);">
   <div class="container">
     <h1>Save any kind of movies<strong></h1>
+    <div class="text-left mt-3">
+      <%= link_to "Create a movie list", new_list_path, class: "btn btn-success" %>
+    </div>
   </div>
  </div>
 
@@ -8,7 +11,6 @@
   <div class="row">
     <div class="col-12">
       <div class="mt-5">
-        <%= link_to "Create a movie list", new_list_path, class: "btn btn-success btn-right" %>
         <h2>My Lists</h2>
         <%= render "shared/cards_list", lists: @lists %>
       </div>
