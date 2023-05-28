@@ -1,17 +1,17 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://newinoeiras.nit.pt/wp-content/uploads/2023/02/dc4adbb6887d4a4b40da0617458b180a-754x394.jpg);">
   <div class="container">
     <h1>Create a movie list <strong></h1>
-    <p>Classic</p>
   </div>
  </div>
 
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <%= link_to "Create a movie list", new_list_path, class: "btn btn-ghost btn-right" %>
-      <p>My Lists</p>
-      <%= render "shared/cards_list", lists: @lists %>
-      <br>
+      <div class="mt-5">
+        <%= link_to "Create a movie list", new_list_path, class: "btn btn-ghost btn-right" %>
+        <h2>My Lists</h2>
+        <%= render "shared/cards_list", lists: @lists %>
+      </div>
     </div>
   </div>
 </div>

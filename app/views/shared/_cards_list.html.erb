@@ -1,4 +1,4 @@
-<div class="cards-list">
+<div class="cards-list mt-3">
    <% lists.each do |list| %>
       <%= link_to list_path(list) do %>
         <div class="card"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
